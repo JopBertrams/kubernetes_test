@@ -3,9 +3,9 @@ kind: Service
 metadata:
   name: nginx-service
 spec:
-  loadBalancerIP: 130.162.33.4
-  type: LoadBalancer
-  ports:
-  - port: 80
   selector:
     app: nginx-deployment
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
