@@ -26,5 +26,3 @@ jobs:
           namespace: default
           manifests: |
             combined.yaml
-          images: |
-            nginx
