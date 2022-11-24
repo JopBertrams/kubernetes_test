@@ -25,4 +25,8 @@ jobs:
         with:
           namespace: default
           manifests: |
-            combined.yaml
+            deployment.yaml
+            ingress.yaml
+            service.yaml
+          images: |
+            nginx
